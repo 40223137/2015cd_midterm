@@ -91,7 +91,7 @@ class Hello(object):
         cherrypy.session['count'] = thecount
         # 印出讓使用者輸入的超文件表單
         outstring = '''
-    第七組-40223139-楊承翰
+    第七組-40223137-黃柏學
     '''
 
         return outstring
@@ -134,16 +134,16 @@ class Hello(object):
     @cherrypy.expose
     def drawspur(self):
         # 印出讓使用者輸入的超文件表單
-        outstring = '''<form method=POST action=DEAR>
+        outstring = '''<form method=POST action=BEN>
     M:<input type=text name="a"><br />
     T:<input type=text name="b"><br />
     P:<input type=text name="c"><br />
     <input type=submit value=send>
     </form>'''
         return outstring
-    #@+node:2015.20150408193313.1714: *3* DEAR
+    #@+node:2015.20150408193313.1714: *3* BEN
     @cherrypy.expose
-    def DEAR(self,a, b, c):
+    def BEN(self,a, b, c):
         # 印出讓使用者輸入的超文件表單
         a = float(a)
         b = float(b)
@@ -295,16 +295,16 @@ class Hello(object):
     @cherrypy.expose
     def spur(self):
         # 印出讓使用者輸入的超文件表單
-        outstring = '''<form method=POST action=form>
+        outstring = '''<form method=POST action=lit>
     M:<input type=text name="a"><br />
     T:<input type=text name="b"><br />
     P:<input type=text name="c"><br />
     <input type=submit value=send>
     </form>'''
         return outstring
-    #@+node:2015.20150427142146.1646: *3* form
+    #@+node:2015.20150427142146.1646: *3* lit
     @cherrypy.expose
-    def form(self,a, b, c):
+    def lit(self,a, b, c):
         # 印出讓使用者輸入的超文件表單    
         return '模數' + a +'齒數' + b + '壓力角' + c
     #@+node:2015.20150422191956.1844: *3* three
